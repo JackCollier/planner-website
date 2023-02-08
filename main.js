@@ -42,6 +42,15 @@ function deleteCheck(e){
     const item = e.target;
     //delete item
     if(item.classList[0] === 'remove-btn') {
-        item.parentElement.remove()
+        const todo = item.parentElement;
+        todo.classList.add('fall-animation')
+        todo.addEventListener('transitionend', function(){
+            todo.remove()
+        });
+    };
+
+    if(item.classList[0] === 'completed-btn') {
+        const todo = item.parentElement;
+        todo.classList.toggle('completed')
     };
 };
