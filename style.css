@@ -56,11 +56,12 @@ main {
     border-top-left-radius: 100%;
 }
 
-/* list area */
+/* top form */
 
 header, 
 form {
-    min-height: 7%;
+    max-height: 7%;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,3 +86,40 @@ form button:hover {
     background-color:#d4ae26;
     color: white;
 }
+
+/* list area */
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 50%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.3rem;
+    background: white;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.remove-btn, 
+.completed-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
