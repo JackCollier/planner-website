@@ -26,6 +26,10 @@ main {
     border-radius: 1.1rem;
     z-index: 3;
     backdrop-filter: blur(1rem);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
 }
 
 .decoration1, .decoration2 {
@@ -50,4 +54,34 @@ main {
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(217, 221, 223, 0.1));
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
+}
+
+/* list area */
+
+header, 
+form {
+    min-height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+form input, form button {
+    padding: 0.4rem;
+    border: none;
+    background: white;
+    outline: none;
+    border-radius: 1px;
+}
+
+form button {
+    color: #d4ae26;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color:#d4ae26;
+    color: white;
 }
