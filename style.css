@@ -1,151 +1,164 @@
 :root {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Layout and styling */
 
 main {
-    min-height: 100vh;
-    background: linear-gradient(to left top, #7c532b, #d4ae26);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to left top, #7e4d20, #d4ae26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-container {
-    min-height: 80vh;
-    width: 75%;
-    background: linear-gradient(to right bottom, rgba(235, 235, 235, 0.7), rgba(235, 235, 235, 0.3));
-    border-radius: 1.1rem;
-    z-index: 3;
-    backdrop-filter: blur(1rem);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
+  min-height: 80vh;
+  width: 75%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(235, 235, 235, 0.7),
+    rgba(235, 235, 235, 0.3)
+  );
+  border-radius: 1.1rem;
+  z-index: 3;
+  backdrop-filter: blur(1rem);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
 }
 
-.decoration1, .decoration2 {
-    position: absolute;
-    z-index: 1;
-
+.decoration1,
+.decoration2 {
+  position: absolute;
+  z-index: 1;
 }
 
 .decoration1 {
-    height: 15.5rem;
-    width: 100vw;
-    top: 0%;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(217, 221, 223, 0.1));
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
+  height: 15.5rem;
+  width: 100vw;
+  top: 0%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(217, 221, 223, 0.1)
+  );
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
 }
 
 .decoration2 {
-    height: 15.5rem;
-    width: 100vw;
-    bottom: 0%;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(217, 221, 223, 0.1));
-    border-top-right-radius: 100%;
-    border-top-left-radius: 100%;
+  height: 15.5rem;
+  width: 100vw;
+  bottom: 0%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(217, 221, 223, 0.1)
+  );
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
 }
 
 /* top form */
 
-header, 
+header,
 form {
-    max-height: 7%;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
+  max-height: 7%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
-form input, form button {
-    padding: 0.4rem;
-    border: none;
-    background: white;
-    outline: none;
-    border-radius: 1px;
+form input,
+form button {
+  padding: 0.4rem;
+  border: none;
+  background: white;
+  outline: none;
+  border-radius: 1px;
 }
 
 form button {
-    color: #d4ae26;
-    cursor: pointer;
-    transition: all 1s ease;
+  color: #d4ae26;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 
 form button:hover {
-    background-color:#d4ae26;
-    color: white;
+  background-color: #d4ae26;
+  color: white;
 }
 
 /* list area */
 
 .list-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-list {
-    max-width: 65vw;
-    list-style: none;
+  max-width: 65vw;
+  list-style: none;
 }
 
 .todo {
-    margin: 0.3rem;
-    background: white;
-    color: black;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.35s ease-out;
+  margin: 0.3rem;
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.35s ease-out;
 }
 
 .todo li {
-    flex: 1;
+  flex: 1;
 }
 
-.remove-btn, 
+.remove-btn,
 .completed-btn {
-    color: black;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
+  color: black;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .completed-btn {
-    background-color: rgb(148, 220, 148);
+  background-color: rgb(148, 220, 148);
 }
 .remove-btn {
-    background-color: rgb(236, 145, 145);
+  background-color: rgb(236, 145, 145);
 }
 
 .todo-item {
-    padding: 0.3rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
 .fa-trash,
- .fa-check{
-    pointer-events: none;
+.fa-check {
+  pointer-events: none;
 }
 
 /* Completed overlay */
 .completed {
-    text-decoration: line-through;
-    opacity: 0.4;
+  text-decoration: line-through;
+  opacity: 0.4;
 }
 /* remove animation */
 .fall-animation {
-    transform: translateX(15rem) rotateY(720deg);
-    opacity: 0;
+  transform: translateX(15rem) rotateY(720deg);
+  opacity: 0;
 }
