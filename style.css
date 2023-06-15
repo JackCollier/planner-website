@@ -86,13 +86,22 @@ form button {
   border: none;
   background: white;
   outline: none;
-  border-radius: 1px;
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
 }
+
 
 form button {
   color: #d4ae26;
   cursor: pointer;
   transition: all 1s ease;
+ border-top-right-radius: 0.2rem;
+ border-bottom-right-radius: 0.2rem;
+ border-bottom-left-radius: 0rem;
+ border-top-left-radius: 0rem;
+ 
 }
 
 form button:hover {
@@ -122,6 +131,8 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   transition: all 0.35s ease-out;
+  min-width: 12rem;
+  border-radius: 0.2rem;
 }
 
 .todo li {
@@ -159,6 +170,6 @@ form button:hover {
 }
 /* remove animation */
 .fall-animation {
-  transform: translateX(15rem) rotateY(720deg);
+  transform: translateX(15rem);
   opacity: 0;
 }
