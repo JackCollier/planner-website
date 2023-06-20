@@ -37,8 +37,8 @@ function addTodo(e) {
   todoInput.value = "";
 }
 
-function deleteCheck(e) {
-  const item = e.target;
+function deleteCheck({ target }) {
+  const item = target;
   //delete item
   if (item.classList[0] === "remove-btn") {
     const todo = item.parentElement;
